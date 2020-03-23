@@ -94,7 +94,7 @@ $ git clone https://github.com/silvasouzaadriano/bootcamp8-gostack-gobarber
 $ cd bootcamp8-gostack-gobarber/backend
 
 # Install dependencies
-$ yarn install OR npm run install
+$ yarn install OR npm install
 
 # Created Postgree Docker container
 $ docker run --name gobarber_database -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=gobarber -p 5432:5432 -d postgres
@@ -106,7 +106,7 @@ $ docker run --name gobarber_mongo -p 27017:27017 -d -t mongo
 $ docker run --name gobarber_redis -p 6379:6379 -d -t redis:alpine
 
 # .env
-$ Replace the .env.EXAMPLE to .env
+$ Replace the .env.EXAMPLE to .env. i.e: mv .env.example .env
 
 # Mail
 In the .env must be changed the user and password regarding on section mail according to created on https://mailtrap.io. Note that this approach was used to simulate the email sending regarding to notifications. The suggestion is to Log in the Mailtrap and create an Inbox called gobarber then access the inbox created for get the credencials which must be used on on .env, section Mail.
